@@ -1,4 +1,4 @@
-import 'package:cook_it/categories.dart';
+import 'package:cook_it/screens/categories.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
