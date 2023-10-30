@@ -1,4 +1,4 @@
-# cook_it
+# Cook-It
 
 A flutter android app that will help to get the information about ingredients of your favourite
 meal.
