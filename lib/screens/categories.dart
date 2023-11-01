@@ -4,8 +4,15 @@ import 'package:cook_it/screens/meals.dart';
 import 'package:cook_it/widgets/category_grid_item.dart';
 import 'package:flutter/material.dart';
 
+import '../models/meal.dart';
+
 class CategoriesScreen extends StatelessWidget {
-  const CategoriesScreen({super.key});
+  const CategoriesScreen({
+    super.key,
+    required this.onToggleFavourite,
+  });
+
+  final void Function(Meal meal) onToggleFavourite;
 
   void _selectCategory(BuildContext context, Category category) {
     final filteredMeals = dummyMeals
@@ -17,6 +24,7 @@ class CategoriesScreen extends StatelessWidget {
         builder: (ctx) => MealsScreen(
           title: category.title,
           meals: filteredMeals,
+          onToggleFavourite: onToggleFavourite,
         ),
       ),
     );
