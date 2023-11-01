@@ -1,4 +1,4 @@
-import 'package:cook_it/screens/categories.dart';
+import 'package:cook_it/screens/tabs.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -21,8 +21,8 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        theme: theme,
-        home: const CategoriesScreen(),
+      theme: theme,
+      home: const TabsScreen(),
     );
   }
 }
