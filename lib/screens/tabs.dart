@@ -1,5 +1,6 @@
 import 'package:cook_it/screens/categories.dart';
 import 'package:cook_it/screens/meals.dart';
+import 'package:cook_it/widgets/main_drawer.dart';
 import 'package:flutter/material.dart';
 
 import '../models/meal.dart';
@@ -67,6 +68,7 @@ class _TabsScreenState extends State<TabsScreen> {
       appBar: AppBar(
         title: Text(activePageTitle),
       ),
+      drawer: const MainDrawer(),
       body: activePage,
       bottomNavigationBar: BottomNavigationBar(
         onTap: _selectPage,
